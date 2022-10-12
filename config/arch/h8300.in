@@ -1,0 +1,9 @@
+# H8300SX specific configuration file
+
+## no-package
+## select ARCH_SUPPORTS_32
+## select ARCH_DEFAULT_32
+## select ARCH_DEFAULT_BE
+##
+## help The H8300 architecture, as defined by:
+## help     http://www.renesas.com
