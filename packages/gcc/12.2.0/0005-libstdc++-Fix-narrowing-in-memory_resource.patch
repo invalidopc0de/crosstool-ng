@@ -1,0 +1,15 @@
+--- a/libstdc++-v3/src/c++17/memory_resource.cc
++++ b/libstdc++-v3/src/c++17/memory_resource.cc
+@@ -877,9 +877,9 @@
+       1024, 1536,
+       2048, 3072,
+ #if __SIZE_WIDTH__ > 20
+-      1<<12, 1<<13, 1<<14,
+-      1<<15, 1<<16, 1<<17,
+-      1<<20, 1<<21, 1<<22 // 4MB should be enough for anybody
++      1lu<<12, 1lu<<13, 1lu<<14,
++      1lu<<15, 1lu<<16, 1lu<<17,
++      1lu<<20, 1lu<<21, 1lu<<22 // 4MB should be enough for anybody
+ #endif
+ #endif
+   };
